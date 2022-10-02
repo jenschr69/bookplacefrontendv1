@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bookplace - Your favorite online bookplace.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://fonts.google.com/css?family=Roboto">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://kit.fontawesome.com/1e3dea8b5b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div class="grid-container">
+
+<nav>
+  <ul>
+    <li class="brandid padding--top10"> <a href="#"><i class="fas fa-book fa-lg fa-pink fa-2x"></i> <span class="heading3">bookplace</span></a></li>
+
+    <li class="search-container">
+      <!-- This file has not been created so search function does not work -->
+        <form action="/action_page.php" class="searchcontainer__form">
+          <input class="searchcontainer__form--input" type="text" placeholder="Search books, authors & users" name="search">
+          <button type="submit" class="button__search"><i class="fas fa-search fa-2x"></i></button>
+        </form>
+    </li>
+
+    <li class="book-menu-item padding--top15 dropdown"><a href="#" class="description description__menu--color">Books <i class="fas fa-caret-down" aria-hidden="true"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Menu item 1</a></li>
+        <li><a href="#">Menu item 2</a></li>
+      </ul>
+    </li>
+
+    <li class="company-menu-item padding--top15 dropdown"><a href="#" class="description description__menu--color">Company <i class="fas fa-caret-down" aria-hidden="true"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Press room</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </li>
+
+    <li class="readlist-menu-item">
+      <a href="#"><button class="button__readlist"><i class="far fa-bookmark"></i>&nbsp;Readlist</a></button>
+    </li>
+
+    <section class="mobile-nav-icons">
+      <li class="search-container-mobile"><a href="#"><button><i class="fas fa-search"></i></button>&nbsp;</a></li>
+      <li class="user-icon"><a href="#"><i class="far fa-user"></i>&nbsp;</a></li>
+      <li class="menu-bars"><a href="#"><i class="fas fa-bars"></i>&nbsp;</a></li>
+    </section>
+  </ul>
+</nav>
+
+<header class="header-image"></header>
+
+<main>
+  <section class="book_list">
+    <h2 class="heading2">Popular books</h2>
+    <p>Browse all</p>
+    <!-- Slider with books -->
+      <iframe src="popular-books.html" width="100%" class="iframe__height" style="border:none;"></iframe>
+  </section>
+
+  <!-- App download section -->
+  <section class="appdownload cellphonebg">
+    <section class="appdownloadcellphoneimg--center appdownloadcellphoneimg--floatright">
+      <img src="img/cellphones-mobile.png" alt="Two cellhones crossing each other" width="360px" height="450px" class="cellphone-position">
+    </section>
+    <section class="appdownloadcellphonetext--floatleft">
+      <section>
+        <h2 class="heading2">Always with you.<br>Ready to help you.</h2>
+        <p class="preamble">With our app you can scan books on the go,<br>see what your friends are reading, and more.</p>
+        <a href="#"><img src="img/app-store.svg" alt="Download bookplace app on App Store" width="150px" height="40px" class="appstore__img"></a>
+        <a href="#"><img src="img/google-play-563x168.png" alt="Download bookplace app Google Play" width="150px" height="40px" class="googleplay__img"></a>
+      </section>
+    </section> 
+  </section>
+
+  <section class="book_list">
+    <h2 class="heading2">Newly released</h2>
+    <p>Browse all</p>
+      <iframe src="newly-released.html" width="100%" class="iframe__height" style="border:none;"></iframe>
+  </section>
+  
+  <!-- FAQ section -->
+  <section class="faq">
+    <section class="faq-quest">
+      <section class="faq-questions faq__heading">
+        <h3 class="heading3">Frequently asked questions</h3>
+      </section>
+
+      <details class="faq-questions">
+        <summary><h3>Is the service really 100% free to use?</h3></summary>
+        <div class="content">
+          <p>
+            Yes, of course!
+          </p>
+        </div>
+      </details>
+      
+      <details class="faq-questions">
+        <summary><h3>How many active users are there?</h3></summary>
+        <div class="content">
+          <p>
+            Around 100 000 each months.
+          </p>
+        </div>
+      </details>
+      
+      <details class="faq-questions">
+        <summary><h3>Who owns the rights to all of the reviews posted?</h3></summary>
+        <div class="content">
+          <p>
+            You are, but bookplace can use them as long as they are active in our system. 
+            But you are of course free to reuse your own reviews where ever you want.
+            And you can of course remove/delete your reviews at any time.
+          </p>
+        </div>
+      </details>
+      
+      <details class="faq-questions">
+        <summary><h3>Why are some books missing a score?</h3></summary>
+        <div class="content">
+          <p>
+            Some books are missing a score because they simply haven't been reviewed yet.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-questions">
+        <summary><h3>Why can't I find a specific book?</h3></summary>
+        <div class="content">
+          <p>
+            This is because the book haven't been added yet by bookplace or one of our users.
+          </p>
+        </div>
+      </details>
+      
+      <details class="faq-questions">
+        <summary><h3>What do I do when I find an error?</h3></summary>
+        <div class="content">
+          <p>
+            If you find an error on our website, we would really appreciate if you could let us know.
+            Please send a mail to error@bookplace.com, and we will take a look at it as soon as possible.
+          </p>
+        </div>
+      </details>
+      
+    </section>
+    
+    <!-- Hide the FAQ picture on mobile and tablet, display on desktop -->
+    <section class="faq-image">
+      
+    </section>
+  </section> <!-- End FAQ section -->
+
+</main>
+
+<footer>
+  <section class="footer__brandid footer__brandid--padding-top">
+    <i class="fas fa-book fa-lg fa-2x"></i><span class="heading1 brandid__footer--mobile">&nbsp;bookplace</span>
+  </section>
+
+  <section class="footer-nav-linkblock--container footer-nav-linkblock__grid">
+    <section class="footer-nav-linkblock">
+      <p class="description">Quick links</p>
+      <a href="#">Login</a><br>
+      <a href="#">Get started</a><br>
+      <a href="#">Help center</a><br>
+      <a href="#">Download app</a><br>
+      <a href="#">Frågor och svar</a><br>
+    </section>
+
+    <section class="footer-nav-linkblock">
+      <p class="description">Books</p>
+      <a href="#">Top rated books</a><br>
+      <a href="#">User reviews</a><br>
+      <a href="#">New releases</a><br>
+      <a href="#">Coming soon</a><br>
+      <a href="#">Recommendations</a><br>
+      <a href="#">Sort by genre</a><br>
+    </section>
+
+    <section class="footer-nav-linkblock">
+      <p class="description">Company</p>
+      <a href="#">About us</a><br>
+      <a href="#">Blog</a><br>
+      <a href="#">Press room</a><br>
+      <a href="#">Careers</a><br>
+    </section>
+
+    <section class="footer-nav-linkblock">
+      <p class="description">Work with us</p>
+      <a href="#">Authors</a><br>
+      <a href="#">Advertise</a><br>
+      <a href="#">API</a><br>
+    </section>
+  </section> <!-- End Footer Nav Linkblock Container-->
+  
+  <section class="footer-nav-some footer__some--padding-top some__flex--container">
+      <!-- TODO: Add spacing between icons -->
+      <span class="some__dot--bg some__dot-content--align"> <a href="#"><i class="fab fa-instagram fa-2x"></i></a></span>
+      <span class="some__dot--bg some__dot-content--align"><a href="#"><i class="fab fa-twitter fa-2x"></i></a></span>
+      <span class="some__dot--bg some__dot-content--align"><a href="#"><i class="fab fa-facebook fa-2x"></i></a></span>
+  </section>
+
+  <section class="footer-nav-links description">
+    <p><a href="#">Cookies</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Privacy policy</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Data selling</a></p>
+  </section>
+
+  <section class="footer-copyright description">
+    <p>&copy; 2021 Bookspace</p>
+  </section>
+  
+</footer>
+</div> <!-- End grid container -->
+</body>
+</html>
+

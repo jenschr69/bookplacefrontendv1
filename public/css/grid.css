@@ -1,0 +1,255 @@
+/* Mobile layout */
+.grid-container {
+  margin: 0px auto;
+  padding: 0px;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  grid: "nav" 
+        "header"
+        "main" 
+        "footer" /
+        6fr;
+  width: 340px;
+}
+
+/* Navigation */
+nav > ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.brandid {
+  grid-column: span 3;
+}
+
+.search-container, .book-menu-item, .company-menu-item, .readlist-menu-item {
+  display: none;
+}
+
+.mobile-nav-icons {
+  grid-column: span 2;
+}
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.footer__brandid {
+  grid-column: span 6;
+}
+
+.footer-nav-linkblock--container {
+  grid-column: span 6;
+}
+
+.footer-nav-linkblock__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.footer-nav-linkblock {
+  grid-column: span 3;
+}
+
+.brandidfooter-text {
+  display: block;
+}
+
+.footer-nav-some {
+  grid-column: span 6;;
+}
+
+/* Tablet layout */
+@media screen and (min-width: 764px) {
+  .grid-container {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 30px;
+    grid: "nav" 
+          "header"     
+          "main" 
+          "footer" /
+          12fr;
+    width: 762px;
+    margin: auto;
+  }
+
+  /* Navigation */
+  nav > ul {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .brandid {
+    grid-column: span 4;
+  }
+
+  .search-container {
+    display: block;
+    grid-column: span 4;
+  }
+
+  .search-container-mobile {
+    display: none;
+  }
+
+  .mobile-nav-icons {
+    grid-column: span 1;
+  }
+
+  /* App download section */
+  .appdownload {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .appdownload > section {
+    grid-column: span 6;
+  }
+  
+  /* Footer */
+  footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .footer__brandid {
+    grid-column: span 2;
+  }
+
+  .brandid__footer--mobile {
+    display: none;
+  }
+
+  .footer-nav-linkblock--container {
+    grid-column: span 6;
+  }
+  
+  /* Subgrid for 4 linkblock sections */
+  .footer-nav-linkblock__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .footer-nav-linkblock {
+    grid-column: span 6; /* Each linkblock should take up 50 % of the space of the subgrid */
+  }
+
+  /* Social media icons */
+  .footer-nav-some {
+    grid-column: span 4;
+  }
+
+  /* Footer links / Copyright */
+  .footer-nav-links, .footer-copyright {
+    grid-column: span 6;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+
+}
+
+
+/* Desktop layout */
+@media screen and (min-width: 1292px) {
+  .grid-container {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 30px;
+    grid: "nav" 
+          "header" 
+          "main" 
+          "footer" /
+          12fr;
+    width: 1290px;
+    margin: auto;
+  }
+
+  /* Navigation */
+  nav {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .brandid {
+    grid-column: span 3;
+  }
+  
+  .search-container {
+    grid-column: span 3;
+  }
+
+  .book-menu-item, .company-menu-item, .readlist-menu-item {
+    display: block;
+    grid-column: span 1;
+  }
+
+  .search-container-mobile {
+    display: none;
+  }
+   
+  .mobile-nav-icons {
+    grid-column: span 1;
+  }
+
+  /* Main */
+  
+
+  /* FAQ section */
+  .faq {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .faq-quest, .faq-image {
+    grid-column: span 6;
+  }
+
+  /* Footer */
+  footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .footer__brandid {
+    grid-column: span 1;
+  }
+
+  /* Subgrid for 4 linkblock sections */
+  .footer-nav-linkblock--container {
+    grid-column: span 8;
+  }
+
+  .footer-nav-linkblock__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .footer-nav-linkblock {
+    grid-column: span 3; /* Each linkblock should take up 50 % of the space of the subgrid */
+  }
+
+  /* Social media icons */
+  .footer-nav-some {
+    grid-column: span 3;
+  }
+
+  .footer-nav-links, .footer-copyright {
+    grid-column: span 6;
+  }
+
+  .footer-copyright {
+    text-align: center;
+}
+
+nav {grid-area: nav;}
+header { grid-area: header;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+}
